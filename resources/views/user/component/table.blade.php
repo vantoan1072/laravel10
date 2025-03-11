@@ -7,7 +7,7 @@
                                 <th style="width: 90p";> Họ Tên:</th>
                                 <th>Email</th>
                                 <th>SĐT</th>
-                                <th>Địa chỉ</th>
+                                <th>Chức vụ</th>
                                 <th>Trạng thái</th>
                                 <th>Thao tác</th>
                             </tr>
@@ -21,7 +21,7 @@
                                     <input type="checkbox" class="input-checkbox" id="">
                                 </td>
                                 <td>
-                                    <div class="infor-item-email">{{$Employee->name}}</div>
+                                    <div class="infor-item-email">{{$Employee->first_name.$Employee->last_name}}</div>
                                 </td>
                                 <td>                               
                                 <div class="infor-item-email">{{$Employee->email}} </div>
@@ -30,7 +30,7 @@
                                 <div class="infor-item-phone">{{$Employee->phone}} </div>
                                 </td>
                                 <td>
-                                <div class="infor-item-">{{$Employee->address}} </div>
+                                <div class="infor-item-">{{$Employee->position_id}} </div>
                                 </td>
                                 <td>
                                     <input type="checkbox" class="js-switch" checked />

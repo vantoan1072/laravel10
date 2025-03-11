@@ -13,16 +13,11 @@
                                         </select>
                                         <div class="uk-search uk-fle uk-flex-middle mr10">
                                         </div>
-                                            <div class="input-group">
-                                                <input type="text" class="form-control input-sm" name="keyword" 
-                                                value="" 
-                                                placeholder="Tìm kiếm">
-                                            </div>
-                                        <span class="input-group-btn">
-                                            <button class="btn btn-sm btn-primary" name="search" value="search" type="button">
-                                                tìm kiếm
-                                            </button>
-                                        </span>
+                                    </div>
+                                    <div id="search-form"> 
+                                        
+                                        @vite('resources/js/crud/search.jsx')
+                                    </div>
                                         <a href="{{ route('user.form_add') }}" class="btn btn-sm btn-success">
                                             <i class="fa fa-plus"></i> Thêm mới
                                         </a>

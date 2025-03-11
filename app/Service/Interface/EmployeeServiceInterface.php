@@ -5,6 +5,6 @@ interface EmployeeServiceInterface
 {
     public function paginate();
     public function create($data);
-    public function find($id);
-    
+    public function findById($id);
+    public function update($data, $id);
 }

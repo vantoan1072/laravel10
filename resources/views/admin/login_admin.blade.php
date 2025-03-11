@@ -18,6 +18,8 @@
 
 <body class="gray-bg">
 
+
+
     <div class="loginColumns animated fadeInDown">
         <div class="row">
 
@@ -54,6 +56,10 @@
                 <div class="ibox-content">
                     <form class="m-t" role="form" action="{{route('auth.login')}}" method="post">
                         @csrf
+                        <div id="app">
+                        @vite('resources/js/app.jsx')
+                        </div>
+                        
                         <div class="form-group">
                             <input type="text" name="username" class="form-control" placeholder="Email" required="">
                             @if($errors->has('username'))

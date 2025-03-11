@@ -12,10 +12,16 @@
         @include('dashboad.component.nav')
         
         @include($template)
+        
         @include('dashboad.component.footer')
         
     </div>
 
     @include('dashboad.component.script')
+<script>
+    if (window.history.replaceState) {
+    window.history.replaceState(null, null, window.location.href);
+    }
+</script>
 </body>
 </html>

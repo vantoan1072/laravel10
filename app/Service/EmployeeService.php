@@ -27,9 +27,19 @@ class EmployeeService implements EmployeeServiceInterface
         return  $user;
     }
 
-    public function find($id)
+    public function findById($id)
     {
-        return $this->EmployeesRepository->find($id);
+        return $this->EmployeesRepository->findById($id);
          
+    }
+
+    public function update($data, $id)
+    {
+        $this->EmployeesRepository->update($data, $id);
+    }
+
+    public function searchByKeyword($key)
+    {
+        $this->EmployeesRepository->searchByKeyword($key);
     }
 }
